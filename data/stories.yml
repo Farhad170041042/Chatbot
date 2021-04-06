@@ -22,6 +22,14 @@ stories:
   - action: utter_thank
   - intent: information_about_world
   - action: utter_information_about_world
+  - intent: information_about_day
+  - action: utter_information_about_day
+  - intent: apologize
+  - action: utter_apologize
+  - intent: help
+  - action: utter_help
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
 
 - story: happy path 2
   steps:
@@ -43,6 +51,17 @@ stories:
   - action: utter_thank
   - intent: information_about_world
   - action: utter_information_about_world
+  - intent: information_about_day
+  - action: utter_information_about_day
+  - intent: romantic
+  - action: utter_romantic
+  - intent: apologize
+  - action: utter_apologize
+  - intent: help
+  - action: utter_help
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
 
 - story: happy path 3
   steps:
@@ -68,6 +87,15 @@ stories:
   - action: utter_thank
   - intent: information_about_world
   - action: utter_information_about_world
+  - intent: romantic
+  - action: utter_romantic
+  - intent: apologize
+  - action: utter_apologize
+  - intent: help
+  - action: utter_help
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
 
 - story: happy path 4
   steps:
@@ -89,6 +117,15 @@ stories:
   - action: utter_thank
   - intent: information_about_world
   - action: utter_information_about_world
+  - intent: romantic
+  - action: utter_romantic
+  - intent: apologize
+  - action: utter_apologize
+  - intent: help
+  - action: utter_help
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
 
 - story: happy path 5
   steps:
@@ -108,6 +145,15 @@ stories:
   - action: utter_cheer_up
   - intent: thank
   - action: utter_thank
+  - intent: romantic
+  - action: utter_romantic
+  - intent: apologize
+  - action: utter_apologize
+  - intent: help
+  - action: utter_help
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
 
 - story: sad path 1
   steps:
@@ -124,6 +170,14 @@ stories:
   - action: utter_thank
   - intent: information_about_world
   - action: utter_information_about_world
+  - intent: information_about_day
+  - action: utter_information_about_day
+  - intent: romantic
+  - action: utter_romantic
+  - intent: apologize
+  - action: utter_apologize
+  - intent: help
+  - action: utter_help
 
 - story: sad path 2
   steps:
@@ -139,6 +193,14 @@ stories:
   - action: utter_cheer_up
   - intent: information_about_world
   - action: utter_information_about_world
+  - intent: information_about_day
+  - action: utter_information_about_day
+  - intent: romantic
+  - action: utter_romantic
+  - intent: apologize
+  - action: utter_apologize
+  - intent: help
+  - action: utter_help
 
 
 - story: sad path 3
@@ -156,4 +218,12 @@ stories:
   - action: utter_thank
   - intent: information_about_world
   - action: utter_information_about_world
+  - intent: information_about_day
+  - action: utter_information_about_day
+  - intent: romantic
+  - action: utter_romantic
+  - intent: apologize
+  - action: utter_apologize
+  - intent: help
+  - action: utter_help
 

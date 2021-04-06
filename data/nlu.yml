@@ -51,6 +51,7 @@ nlu:
     - Do you know about current situation?
     - How is covid situation?
     - World news?
+    - world?
 
 - intent: goodbye
   examples: |
@@ -131,7 +132,7 @@ nlu:
     - i wish my death
     - why :(
     - I am unluckiest person
-    _ Why am i alive?
+    - Why am i alive?
     - I am sad
     - I don't feel very well
     - I am disappointed
@@ -215,6 +216,7 @@ nlu:
     - I appreciate you
     - tnx
     - okay thanks
+    - really thanks
 
 - intent: normal
   examples: |
@@ -223,3 +225,8 @@ nlu:
     - alright
     - hm
     - ok
+    - haee
+    - oky
+    - then okay
+
+
