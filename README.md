@@ -11,3 +11,8 @@ It can cheer you up according to the mood.
 A simple conversation between the chatbot and user is here -
 
 ![](images/chat1.jpg)
+
+
+This Chatbot can also handle different moods of user -
+
+![](images/chat2.jpg)
