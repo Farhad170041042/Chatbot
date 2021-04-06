@@ -1,0 +1,225 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: information
+  examples: |
+    - hey i want to ask you something
+    - Do you know this?
+    - Hey,are you there?
+    - Help me
+    - May i ask you something?
+    - I want this information
+    - Can you tell me?
+    - Do mind if i ask you something?
+    - I need to know something
+
+- intent: information_about_day
+  examples: |
+    - What day is it?
+    - tell me about today
+    - Do you know the date?
+    - Date?
+    - Day?
+    - It is monday?
+    - It is tuesday?
+    - It is wednesday?
+    - It is Thursday?
+    - It is friday?
+    - It is saturday?
+    - It is sunday?
+
+- intent: information_about_world
+  examples: |
+    - What's new?
+    - What is happenning today?
+    - Do you know about current situation?
+    - How is covid situation?
+    - World news?
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - i need to go
+    - :)
+    - tata
+    - su
+    - good by
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - ;)
+    - yep
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yup
+    - strongly agreed
+    - agree
+    - you are right
+
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - what!
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - do not agree
+    - not always
+    - na
+    - lame
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - wow
+    - no way!
+    - are you serious?
+    - I am flying today
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - fine
+    - i am fine
+    - lol
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - i wish my death
+    - why :(
+    - I am unluckiest person
+    _ Why am i alive?
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - bro who are you?
+    - You naughty bot
+    - look who am i talking to
+    - Are you alive?
+    - You should be human
+
+- intent: apologize
+  examples: |
+    - I am sorry
+    - srry
+    - forgive me
+    - sorry
+    - :( sorry
+    - Accept my apology.
+    - So sorry
+    - My Bad
+    - Oops
+    - Pardon me
+    - I Beg Your Pardon
+    - My Apologies
+
+- intent: funny
+  examples: |
+    - tell me something funny
+    - give me a meme
+    - what is funny?
+    - Are you fun?
+    - do not bore me
+    - Want to hear a meme?.
+    - I want sarcasm
+    - What is sarcasm?
+    - Make me happy
+    - I want to smile
+    - I want to laugh
+
+- intent: romantic
+  examples: |
+    - tell me something romantic
+    - i am nostalgic
+    - i am fantastic today
+    - Today is like fairy tale
+    - exotic
+    - You are so daring
+    - I want you wild
+    - What a nice weather it is!
+    - romantic weather
+
+- intent: help
+  examples: |
+    - i want your help
+    - help me please
+    - can you help me
+    - Can you do it for me
+    - help
+
+- intent: thank
+  examples: |
+    - Thank you
+    - Thanks
+    - Thanks you very much
+    - I appreciate you
+    - tnx
+    - okay thanks
+
+- intent: normal
+  examples: |
+    - hmm
+    - okay
+    - alright
+    - hm
+    - ok

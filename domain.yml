@@ -1,0 +1,82 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - information
+  - apologize
+  - information_about_day
+  - information_about_world
+  - funny
+  - romantic
+  - help
+  - thank
+  - normal
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgflip.com/1rd4ig.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_information:
+    - text: "Great, I can tell you about today or the world!"
+
+  utter_information_about_day:
+    - text: "just check your mobile bro :p"
+
+  utter_information_about_world:
+    - text: "Go check this website https://www.bbc.com/news/world!/ "
+
+  utter_mood_unhappy:
+    - text: "I want to know what are you going though"
+
+  utter_mood_great:
+  - text: "Great, carry on! You are awesome"
+
+  utter_apologize:
+    - text: "It's okay. I understand!"
+
+  utter_funny:
+    - text: "A girl an 'eat the rich sweater' just boarded in fist class -.- "
+
+  utter_romantic:
+    - text: "You are so romantic"
+
+  utter_help:
+    - text: "How can i help you? I can cheer you up if you want or ask me about today"
+
+  utter_affirm:
+    - text: "Great, carry on!"
+
+  utter_deny:
+    - text: "I hope you understand.Please carry on"
+
+  utter_wanna_hear:
+    - text: "Wanna hear something?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_thank:
+    - text: "okay bro,bye"
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
