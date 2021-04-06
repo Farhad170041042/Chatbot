@@ -30,6 +30,8 @@ stories:
   - action: utter_help
   - intent: mood_unhappy
   - action: utter_mood_unhappy
+  - intent: information
+  - action: utter_information
 
 - story: happy path 2
   steps:
@@ -61,7 +63,8 @@ stories:
   - action: utter_help
   - intent: mood_unhappy
   - action: utter_mood_unhappy
-
+  - intent: information
+  - action: utter_help
 
 - story: happy path 3
   steps:
@@ -95,7 +98,8 @@ stories:
   - action: utter_help
   - intent: mood_unhappy
   - action: utter_mood_unhappy
-
+  - intent: information
+  - action: utter_information
 
 - story: happy path 4
   steps:
@@ -125,7 +129,8 @@ stories:
   - action: utter_help
   - intent: mood_unhappy
   - action: utter_mood_unhappy
-
+  - intent: information
+  - action: utter_information
 
 - story: happy path 5
   steps:
@@ -154,7 +159,6 @@ stories:
   - intent: mood_unhappy
   - action: utter_mood_unhappy
 
-
 - story: sad path 1
   steps:
   - intent: greet
@@ -178,6 +182,8 @@ stories:
   - action: utter_apologize
   - intent: help
   - action: utter_help
+  - intent: information
+  - action: utter_information
 
 - story: sad path 2
   steps:
@@ -201,6 +207,8 @@ stories:
   - action: utter_apologize
   - intent: help
   - action: utter_help
+  - intent: information
+  - action: utter_information
 
 
 - story: sad path 3
@@ -226,4 +234,7 @@ stories:
   - action: utter_apologize
   - intent: help
   - action: utter_help
+  - intent: information
+  - action: utter_information
+
 
