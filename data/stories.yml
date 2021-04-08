@@ -1,240 +1,69 @@
 version: "2.0"
 
 stories:
-
-- story: happy path 1
+- story: greetings
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_mood_great
+
+- story: normal conversation
+  steps:
   - intent: normal
   - action: utter_wanna_hear
   - intent: affirm
-  - action: utter_funny
-  - intent: normal
   - action: utter_cheer_up
-  - intent: mood_great
+  - intent: normal
+
+- story: did that help
+  steps:
+  - intent: normal
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_affirm
-  - intent: thank
-  - action: utter_thank
-  - intent: information_about_world
-  - action: utter_information_about_world
-  - intent: information_about_day
-  - action: utter_information_about_day
-  - intent: apologize
-  - action: utter_apologize
-  - intent: help
-  - action: utter_help
-  - intent: mood_unhappy
-  - action: utter_mood_unhappy
-  - intent: information
-  - action: utter_information
 
-- story: happy path 2
+- story: did not help
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_mood_great
   - intent: normal
-  - action: utter_wanna_hear
-  - intent: deny
-  - action: utter_funny
-  - intent: normal
-  - action: utter_cheer_up
-  - intent: mood_great
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_affirm
-  - intent: thank
-  - action: utter_thank
-  - intent: information_about_world
-  - action: utter_information_about_world
-  - intent: information_about_day
-  - action: utter_information_about_day
-  - intent: romantic
-  - action: utter_romantic
-  - intent: apologize
-  - action: utter_apologize
-  - intent: help
-  - action: utter_help
-  - intent: mood_unhappy
-  - action: utter_mood_unhappy
-  - intent: information
-  - action: utter_help
-
-- story: happy path 3
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_mood_great
-  - intent: normal
-  - action: utter_wanna_hear
-  - intent: affirm
-  - action: utter_funny
-  - intent: normal
-  - action: utter_cheer_up
-  - intent: normal
-  - action: utter_help
-  - intent: information_about_day
-  - action: utter_information_about_day
-  - intent: funny
-  - action: utter_funny
-  - intent: mood_great
-  - action: utter_mood_great
-  - intent: thank
-  - action: utter_thank
-  - intent: information_about_world
-  - action: utter_information_about_world
-  - intent: romantic
-  - action: utter_romantic
-  - intent: apologize
-  - action: utter_apologize
-  - intent: help
-  - action: utter_help
-  - intent: mood_unhappy
-  - action: utter_mood_unhappy
-  - intent: information
-  - action: utter_information
-
-- story: happy path 4
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_mood_great
-  - intent: help
-  - action: utter_help
-  - intent: information_about_day
-  - action: utter_information_about_day
-  - intent: funny
-  - action: utter_funny
-  - intent: mood_great
-  - action: utter_mood_great
-  - intent: normal
-  - action: utter_cheer_up
-  - intent: thank
-  - action: utter_thank
-  - intent: information_about_world
-  - action: utter_information_about_world
-  - intent: romantic
-  - action: utter_romantic
-  - intent: apologize
-  - action: utter_apologize
-  - intent: help
-  - action: utter_help
-  - intent: mood_unhappy
-  - action: utter_mood_unhappy
-  - intent: information
-  - action: utter_information
-
-- story: happy path 5
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: information
-  - action: utter_information
-  - intent: information_about_day
-  - action: utter_information_about_day
-  - intent: information_about_world
-  - action: utter_information_about_world
-  - intent: funny
-  - action: utter_funny
-  - intent: mood_great
-  - action: utter_mood_great
-  - intent: normal
-  - action: utter_cheer_up
-  - intent: thank
-  - action: utter_thank
-  - intent: romantic
-  - action: utter_romantic
-  - intent: apologize
-  - action: utter_apologize
-  - intent: help
-  - action: utter_help
-  - intent: mood_unhappy
-  - action: utter_mood_unhappy
-
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_mood_great
-  - intent: normal
-  - action: utter_cheer_up
-  - intent: thank
-  - action: utter_thank
-  - intent: information_about_world
-  - action: utter_information_about_world
-  - intent: information_about_day
-  - action: utter_information_about_day
-  - intent: romantic
-  - action: utter_romantic
-  - intent: apologize
-  - action: utter_apologize
-  - intent: help
-  - action: utter_help
-  - intent: information
-  - action: utter_information
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - intent: deny
   - action: utter_did_that_help
   - intent: deny
+  - action: utter_deny
+
+- story: apologize
+  steps:
+  - intent: apologize
+  - action: utter_apologize
+
+- story: thanking
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- story: bye
+  steps:
+  - intent: goodbye
   - action: utter_goodbye
-  - intent: normal
-  - action: utter_cheer_up
-  - intent: information_about_world
-  - action: utter_information_about_world
-  - intent: information_about_day
-  - action: utter_information_about_day
-  - intent: romantic
-  - action: utter_romantic
-  - intent: apologize
-  - action: utter_apologize
-  - intent: help
-  - action: utter_help
-  - intent: information
-  - action: utter_information
 
-
-- story: sad path 3
+- story: help
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_funny
-  - intent: normal
-  - action: utter_cheer_up
-  - intent: thank
-  - action: utter_thank
-  - intent: information_about_world
-  - action: utter_information_about_world
-  - intent: information_about_day
-  - action: utter_information_about_day
-  - intent: romantic
-  - action: utter_romantic
-  - intent: apologize
-  - action: utter_apologize
   - intent: help
   - action: utter_help
+
+- story: search for information
+  steps:
   - intent: information
   - action: utter_information
 
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
 
+- story: type of information
+  steps:
+  - intent: type_information
+  - action: action_search_information
+
+- story: type of moods
+  steps:
+  - intent: type_mood
+  - action: action_search_mood

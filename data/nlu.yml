@@ -29,30 +29,6 @@ nlu:
     - Do mind if i ask you something?
     - I need to know something
 
-- intent: information_about_day
-  examples: |
-    - What day is it?
-    - tell me about today
-    - Do you know the date?
-    - Date?
-    - Day?
-    - It is monday?
-    - It is tuesday?
-    - It is wednesday?
-    - It is Thursday?
-    - It is friday?
-    - It is saturday?
-    - It is sunday?
-
-- intent: information_about_world
-  examples: |
-    - What's new?
-    - What is happenning today?
-    - Do you know about current situation?
-    - How is covid situation?
-    - World news?
-    - world?
-
 - intent: goodbye
   examples: |
     - good afternoon
@@ -102,50 +78,6 @@ nlu:
     - na
     - lame
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - wow
-    - no way!
-    - are you serious?
-    - I am flying today
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-    - fine
-    - i am fine
-    - lol
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - i wish my death
-    - why :(
-    - I am unluckiest person
-    - Why am i alive?
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
 
 - intent: bot_challenge
   examples: |
@@ -173,32 +105,6 @@ nlu:
     - Pardon me
     - I Beg Your Pardon
     - My Apologies
-
-- intent: funny
-  examples: |
-    - tell me something funny
-    - give me a meme
-    - what is funny?
-    - Are you fun?
-    - do not bore me
-    - Want to hear a meme?.
-    - I want sarcasm
-    - What is sarcasm?
-    - Make me happy
-    - I want to smile
-    - I want to laugh
-
-- intent: romantic
-  examples: |
-    - tell me something romantic
-    - i am nostalgic
-    - i am fantastic today
-    - Today is like fairy tale
-    - exotic
-    - You are so daring
-    - I want you wild
-    - What a nice weather it is!
-    - romantic weather
 
 - intent: help
   examples: |
@@ -229,4 +135,70 @@ nlu:
     - oky
     - then okay
 
+- intent: type_information
+  examples: |
+    - i need to know about [today](days)
+    - what [day](days) is it?
+    - Is it [monday](days) ?
+    - Is it [tuesday](days) ?
+    - Is it [wednesday](days) ?
+    - Is it [thursday](days) ?
+    - Is it [friday](days) ?
+    - Is it [saturday](days) ?
+    - Is it [sunday](days) ?
+    - world [news](news)
+    - what is [going on in this world](news)?
+    - any [news](news)
+    - Tell me about [month](month)
+    - Is it [january](month)
+    - Is it [february](month)
+    - Is it [march](month)
+    - Is it [april](month)
+    - Is it [may](month)
+    - Is it [june](month)
+    - Is it [july](month)
+    - Is it [august](month)
+    - Is it [september](month)
+    - Is it [november](month)
+    - Is it [december](month)
 
+
+- intent: type_mood
+  examples: |
+    - tell me something [funny](sarcasm)
+    - give me a [meme](sarcasm)
+    - what is [funny](sarcasm)?
+    - Are you [fun](sarcasm)?
+    - [do not bore](sarcasm) me
+    - Want to hear a [meme](sarcasm)?.
+    - I want [sarcasm](sarcasm)
+    - What is [sarcasm](sarcasm)?
+    - Make me [happy](happy)
+    - I want to [smile](happy)
+    - I want to [laugh](happy)
+    - I am [allright](happy)
+    - I am [good](happy)
+    - I am [nice](happy)
+    - I am [sad](sad)
+    - [unhappy](sad)
+    - [tired](sad)
+    - [unlucky](sad)
+    - [ :( ](sad)
+    - tell me something [romantic](romantic)
+    - i am [nostalgic](romantic)
+    - i am [fantastic](romantic) today
+    - Today is like [fairy tale](romantic)
+    - [exotic](romantic)
+    - You are so [daring](romantic)
+    - I want you [wild](romantic)
+    - What a nice [weather](romantic) it is!
+    - [romantic weather](romantic)
+    - [perfect](great)
+    - [wow](great)
+    - [no way!](great)
+    - [are you serious?](great)
+    - I am [flying](great) today
+    - [great](great)
+    - [amazing](great)
+    - [feeling](great) like a king
+    - [wonderful](great)
